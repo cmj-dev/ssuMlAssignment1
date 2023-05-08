@@ -14,7 +14,7 @@ This is a competition to find a model for identifying which problem is good, bec
 
 So with the images of question and data of students solution, we have to measure is that a good question.
 
-According to [Guide for Diagnostic Questions *1](https://www.notion.so/Machine-Learning-Term-Project-7e4a8b10d4234955b58ddd77c265c31e) , I try to measure is the question is unambiguous and ask for a single skill/concept.
+According to <u>Guide for Diagnostic Questions *1</u>, I try to measure is the question is unambiguous and ask for a single skill/concept.
 
 # Methods
 
@@ -36,7 +36,7 @@ $$
 
 ### OCR
 
-There will be a relation between the text information and quality of question. So, I use [tesseract *2](https://www.notion.so/Machine-Learning-Term-Project-7e4a8b10d4234955b58ddd77c265c31e) to get text information from image of questions. And with this text informations, extract text length, word count, average word length predictors for logistic regression.
+There will be a relation between the text information and quality of question. So, I use <u>tesseract *2</u> to get text information from image of questions. And with this text informations, extract text length, word count, average word length predictors for logistic regression.
 
 ## 2. Training
 
@@ -56,7 +56,7 @@ I calculate best $r$ by plotting the best score for r in range of (0, 1)  in 0.0
 
 ## 3. Evaluating
 
-To evaluate the model, I follow the method in [Guide for Diagnostic Questions *1](https://www.notion.so/Machine-Learning-Term-Project-7e4a8b10d4234955b58ddd77c265c31e) , when the left and right question is provided, I calculate each question’s score and compare them. And for each experts T1, T2, T3, T4, T5, get the accuracy and use best accuracy between that five.
+To evaluate the model, I follow the method in <u>Guide for Diagnostic Questions *1</u> , when the left and right question is provided, I calculate each question’s score and compare them. And for each experts T1, T2, T3, T4, T5, get the accuracy and use best accuracy between that five.
 
 # Results
 
@@ -95,7 +95,7 @@ To evaluate the model, I follow the method in [Guide for Diagnostic Questions *1
 
 ## **Ensemble**
 
-To get more accuracy in public dataset, I made ensemble model with adjusting value of r in [expression](https://www.notion.so/Machine-Learning-Term-Project-7e4a8b10d4234955b58ddd77c265c31e) before. As we could see in the plot below, when the value of r is between 0.4 to 0.7, model have best performance.
+To get more accuracy in public dataset, I made ensemble model with adjusting value of r in expression before. As we could see in the plot below, when the value of r is between 0.4 to 0.7, model have best performance.
 
 ![Untitled](./img/Untitled.png)
 
